@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Task Management App</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📋 TaskFlow</h1>
+        <p class="subtitle">Manage your tasks efficiently</p>
+
+        <!-- Task Statistics -->
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>📋 Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>⏳ Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>✅ Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="highPriorityTasks">0</h3>
+                <p>🔴 High Priority</p>
+            </div>
+
+        </div>
+
+        <!-- Add Task Form -->
+        <div class="task-form">
+
+            <h2>Add New Task</h2>
+
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+
+            <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+
+            <label>Priority</label>
+
+            <select id="taskPriority">
+                <option value="High">🔴 High</option>
+                <option value="Medium" selected>🟡 Medium</option>
+                <option value="Low">🟢 Low</option>
+            </select>
+
+            <label>Due Date</label>
+
+            <input type="date" id="taskDueDate">
+
+            <button onclick="addTask()">+ Add Task</button>
+
+        </div>
+
+        <!-- Task List -->
+        <div class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <div id="taskList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
