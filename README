@@ -26,10 +26,3 @@ The project was developed and tested using Visual Studio Code and uploaded to Gi
 
 ## How to Run the Project
 
-1. Clone the repository
-2. Open the project folder in VS Code
-3. Install Flask
-4. Run the Python application
-
-```bash
-python app.py
