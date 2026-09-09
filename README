@@ -1,1 +1,40 @@
+# Task Management Application
 
+A simple and user-friendly Task Management Application designed to help users organize and manage their daily tasks efficiently.
+
+## Features
+
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Simple and responsive user interface
+- Easy task management
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- Flask
+
+## How It Was Created
+
+The frontend was designed using HTML and CSS.
+JavaScript was used to add interactive functionality.
+The backend was developed using Python and Flask.
+
+The project was developed and tested using Visual Studio Code.
+Git and GitHub were used for version control and project hosting.
+
+## How to Run the Project
+
+1. Download or clone the repository.
+2. Open the project folder in Visual Studio Code.
+3. Install the required dependencies.
+4. Run the Flask application.
+5. Open the application in a web browser.
+
+## Project Purpose
+
+This project was developed as part of an internship task at Thiranex to demonstrate practical skills in web development, backend programming, and project management.
